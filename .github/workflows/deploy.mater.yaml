@@ -13,6 +13,7 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
+        args: --follow-symlinks --delete
           aws-access-key-id: "AKIAVYUYSSM7EQAHNFXV"
           aws-secret-access-key: "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"
           aws-region: "us-east-1"
